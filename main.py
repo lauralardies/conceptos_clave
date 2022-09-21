@@ -35,6 +35,12 @@ A.vector(x2, y2)
 print("Vector BA:")
 B.vector(x1, y1)
 
+print("Distancia de A a B:")
+A.distancia(x2, y2)
+
+print("Distancia de B a A:")
+B.distancia(x1, y1)
+
 rectangulo = Rectangulo(x1, y1, x2, y2)
 rectangulo.dibujar_rectangulo()
 rectangulo.base()
