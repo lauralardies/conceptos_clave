@@ -36,6 +36,7 @@ print("Vector BA:")
 B.vector(x1, y1)
 
 rectangulo = Rectangulo(x1, y1, x2, y2)
+rectangulo.dibujar_rectangulo()
 rectangulo.base()
 rectangulo.altura()
 rectangulo.area()

@@ -1,4 +1,4 @@
-from punto import Punto
+import turtle
 
 class Rectangulo():
 
@@ -23,3 +23,14 @@ class Rectangulo():
         altura = self.vector_y
 
         return print(base * altura)
+    
+    def dibujar_rectangulo(self):
+        turtle.forward(self.vector_x)
+        turtle.left(90)
+        turtle.forward(self.vector_y)
+        turtle.left(90)
+        turtle.forward(self.vector_x)
+        turtle.left(90)
+        turtle.forward(self.vector_y)
+        turtle.left(90)
+        turtle.done()
