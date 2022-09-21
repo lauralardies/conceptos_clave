@@ -5,6 +5,8 @@ https://github.com/lauralardies/conceptos_clave
 
 ## Código clase Punto
 ```
+import math 
+
 class Punto():
 
     def __init__(self, x, y) -> None:
@@ -37,7 +39,11 @@ class Punto():
     def vector(self, coordenada_x, coordenada_y):
         vector_x = coordenada_x - self.x
         vector_y = coordenada_y - self.y
-        return print("Vector (" + str(vector_x) + ", " + str(vector_y) + ")")       
+        return print("Vector (" + str(vector_x) + ", " + str(vector_y) + ")")   
+        
+    def distancia(self, coordenada_x, coordenada_y):
+        dist = math.sqrt(((coordenada_x - self.x)**2) + ((coordenada_y - self.y)**2))
+        return print (dist)
 ```
 ## Código clase Rectángulo
 ```
@@ -116,6 +122,12 @@ A.vector(x2, y2)
 
 print("Vector BA:")
 B.vector(x1, y1)
+
+print("Distancia de A a B:")
+A.distancia(x2, y2)
+
+print("Distancia de B a A:")
+B.distancia(x1, y1)
 
 rectangulo = Rectangulo(x1, y1, x2, y2)
 rectangulo.dibujar_rectangulo()
