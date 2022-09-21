@@ -4,6 +4,9 @@ class Punto():
         self.x = x
         self.y = y
         self.punto = "(" + str(self.x) + ", " + str(self.y) + ")"
+    
+    def print_punto(self):
+        return print(self.punto)
 
     def cuadrante(self):
         if self.x == 0:

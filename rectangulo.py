@@ -13,10 +13,10 @@ class Rectangulo():
         self.vector_y = self.final_y - self.inicio_y
 
     def base(self):
-        return self.vector_x
+        return print(self.vector_x)
     
     def altura(self):
-        return self.vector_y
+        return print(self.vector_y)
 
     def area(self):
         base = self.vector_x
