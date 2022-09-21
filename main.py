@@ -26,3 +26,25 @@ if y2 == "":
 
 punto.vector(x2, y2)
 
+print("--------------------------------------------")
+print("--------- EJERCICIO DEL RECTÁNGULO ---------")
+print("--------------------------------------------")
+
+inicio_x = int(input("Selecciona la coordenada X de tu punto inicial de la diagonal del rectángulo: "))
+inicio_y = int(input("Selecciona la coordenada Y de tu punto inicial de la diagonal del rectángulo: "))
+
+if inicio_x == "":
+    inicio_x = 0
+if inicio_y == "":
+    inicio_y = 0
+
+final_x = int(input("Selecciona la coordenada X de tu punto final de la diagonal del rectángulo: "))
+final_y = int(input("Selecciona la coordenada Y de tu punto final de la diagonal del rectángulo: "))
+
+if final_x == "":
+    final_x = 0
+if final_y == "":
+    final_y = 0
+
+rectangulo = Rectangulo(inicio_x, inicio_y, final_x, final_y)
+rectangulo.area()
