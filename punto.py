@@ -27,4 +27,4 @@ class Punto():
     def vector(self, coordenada_x, coordenada_y):
         vector_x = coordenada_x - self.x
         vector_y = coordenada_y - self.y
-        return print("(" + str(vector_x) + ", " + str(vector_y) + ")")       
+        return print("Vector (" + str(vector_x) + ", " + str(vector_y) + ")")       
